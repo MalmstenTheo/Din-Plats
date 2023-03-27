@@ -490,6 +490,15 @@ a{
 /*Final pagina Contacto*/
 
 @media (max-width:768px){
+
+    .containerIndex{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
     .mainIndex{
     display: grid;
     grid-template-columns: 1fr 1fr;
