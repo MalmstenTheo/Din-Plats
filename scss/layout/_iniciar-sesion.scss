@@ -1,0 +1,103 @@
+/*Inicio de pagina Iniciar-sesion*/
+
+
+.mainLogin{
+    width: 100%;
+    height: 100%;
+    font-family: 'Signika Negative', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img-fondo-iniciar-sesion.png);
+    .cardLogin{
+        width: 450px;
+        height: 500px;
+    }
+    .gridCardLogin{
+        background-color: #ffffff;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        border-radius: 20px;
+        .h2Login{
+            font-size: medium;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #40541A;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+            margin-top: 10px;
+        }
+        .correoLogin{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-left: 15px;
+            margin-top: 20px;
+            input{
+                display: flex;
+                border-radius: 5px;
+                border-style:none;
+                width: 420px;
+                height: 30px;
+                background-color: #cacaca;
+            }
+        }
+        .contraseñaLogin{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-left: 15px;
+            margin-top: 20px;
+            input{
+                display: flex;
+                border-radius: 5px;
+                border-style:none;
+                width: 420px;
+                height: 30px;
+                background-color: #cacaca;
+            }
+        }
+        .botonLogin{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+                width: 420px;
+                height: 35px;
+                border-style: none;
+                border-radius: 5px;
+                background-color:#40541A
+            }
+        }
+        .registrarmeLogin{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                color: #40541A;
+            }
+        }
+        .ayudaLogin{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                display: flex;
+                flex-direction: column;
+                color: #40541A;
+            }
+        }
+        .terminosLogin{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: #40541A;
+            margin-left: 3px;
+            border-top: 1px solid rgba(0, 0, 0, 0.26);
+        }
+    }
+}
+
+/*Final de pagina Iniciar-sesion*/

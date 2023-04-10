@@ -1,0 +1,31 @@
+/*inicio footer*/
+
+.footer{
+    background-color: #222222;
+    height: 100%;
+    width: 100%;
+    font-family: 'Signika Negative', sans-serif;
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .telefono{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .logoFooter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mail{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+    }
+}
+
+/*fin footer*/
