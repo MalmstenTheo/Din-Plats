@@ -59,7 +59,7 @@
                 display: flex;
                 border-radius: 5px;
                 border-style:none;
-                @include hw(30px,455px);
+                @include hw(30px,455px); /*MIXING*/
                 background-color: #cacaca;
             }
         }

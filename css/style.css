@@ -339,6 +339,7 @@ header nav .usuario {
   border-style: none;
   height: 30px;
   width: 455px;
+  /*MIXING*/
   background-color: #cacaca;
 }
 .mainContacto .cardContacto .mensajeContacto form {
