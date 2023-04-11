@@ -1,0 +1,112 @@
+.mainMapa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 1fr;
+    background-image: url(../../assets/img/img-fondo-mapa.png);
+}
+
+.consultarMapaCard{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.containerMapa{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 5px;
+    div{
+    height: 280px;
+    width: 577px;
+    }
+}
+
+.cardConsultar{
+    display: grid;
+    grid-template-rows: 70px 1fr 1fr 1fr 1fr;
+    height: 600px;
+    width: 577px;
+    border-radius: 15px;
+    font-family: 'Signika Negative', sans-serif;
+    background-color: lightgray;
+    h2{
+        border-bottom: 1px solid #00000036;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+    }
+    form{
+        label{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        width: 537px;
+        }
+    }
+    input{
+        border-radius: 5px;
+        border-style:none;
+        height: 30px;
+    }
+    .comentario{
+        height: 90px;
+    }
+}
+
+.infoCasa{
+    background-color: lightgray;
+    border-radius: 15px;
+    
+    height: auto;
+    width: auto;
+    margin: 30px;
+    
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 5px;
+    
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Signika Negative', sans-serif;
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+    h3{
+        display: flex;
+        justify-content: center;
+    }   
+    .imagenesMapa{
+        display: flex;
+        justify-content: center;
+    }
+    .infoMapa{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        figcaption{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .descripcionMapa{
+        gap: 5px;
+        display: flex;
+        justify-content: end;
+    }
+    .precio{
+        display: flex;
+        justify-content: end;
+        font-size: 25px;
+    }
+}

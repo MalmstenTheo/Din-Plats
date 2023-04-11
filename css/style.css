@@ -169,7 +169,7 @@ header nav .usuario {
   margin-right: 105px;
 }
 .mainIndex section .cardUno button {
-  background-color: #40541A;
+  background-color: #40541A; /*VARIABLE*/
   padding: 3.5px;
   border-radius: 5px;
   font-family: "Signika Negative", sans-serif;
@@ -279,17 +279,6 @@ header nav .usuario {
 
 /*Final de pagina Iniciar-sesion*/
 /*incio pagina Contacto*/
-.headerContacto h1 {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.headerContacto ul {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
 .mainContacto {
   width: 100%;
   height: 100%;
@@ -298,8 +287,7 @@ header nav .usuario {
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img-fondo-contacto.png);
 }
-
-.cardContacto {
+.mainContacto .cardContacto {
   font-family: "Signika Negative", sans-serif;
   width: 500px;
   height: 550px;
@@ -309,27 +297,23 @@ header nav .usuario {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
-.titleContacto {
+.mainContacto .cardContacto .titleContacto {
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.212);
   color: #3D7D5A;
 }
-
-.nombreContacto form {
+.mainContacto .cardContacto .nombreContacto form, .mainContacto .cardContacto .telefonoContacto form {
   height: 100%;
   display: flex;
   align-items: center;
   margin-left: 20px;
 }
-
-.nombreContacto span {
+.mainContacto .cardContacto .nombreContacto span, .mainContacto .cardContacto .telefonoContacto span {
   display: flex;
 }
-
-.nombreContacto input {
+.mainContacto .cardContacto .nombreContacto input, .mainContacto .cardContacto .telefonoContacto input {
   display: flex;
   border-radius: 5px;
   border-style: none;
@@ -337,76 +321,50 @@ header nav .usuario {
   height: 30px;
   background-color: #cacaca;
 }
-
-.telefonoContacto form {
+.mainContacto .cardContacto .telefonoContacto {
+  /*EXTEND*/
+}
+.mainContacto .cardContacto .correoContacto form {
   height: 100%;
   display: flex;
   align-items: center;
   margin-left: 20px;
 }
-
-.telefonoContacto span {
+.mainContacto .cardContacto .correoContacto span {
   display: flex;
 }
-
-.telefonoContacto input {
+.mainContacto .cardContacto .correoContacto input {
   display: flex;
   border-radius: 5px;
   border-style: none;
-  width: 455px;
   height: 30px;
+  width: 455px;
   background-color: #cacaca;
 }
-
-.correoContacto form {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
-}
-
-.correoContacto span {
-  display: flex;
-}
-
-.correoContacto input {
-  display: flex;
-  border-radius: 5px;
-  border-style: none;
-  width: 455px;
-  height: 30px;
-  background-color: #cacaca;
-}
-
-.mensajeContacto form {
+.mainContacto .cardContacto .mensajeContacto form {
   height: 100%;
   display: flex;
   align-items: center;
   margin-left: 20px;
   margin-top: 5px;
 }
-
-.mensajeContacto span {
+.mainContacto .cardContacto .mensajeContacto span {
   display: flex;
 }
-
-.mensajeContacto input {
+.mainContacto .cardContacto .mensajeContacto input {
   width: 455px;
   height: 100px;
   border-radius: 5px;
   border-style: none;
   background-color: #cacaca;
 }
-
-.botonContacto {
+.mainContacto .cardContacto .botonContacto {
   display: flex;
-  align-items: center;
   align-items: center;
   margin-left: 20px;
   margin-top: 12px;
 }
-
-.botonContacto button {
+.mainContacto .cardContacto .botonContacto button {
   width: 455px;
   height: 40px;
   border-style: none;
@@ -415,5 +373,200 @@ header nav .usuario {
 }
 
 /*Final pagina Contacto*/
+.mainMapa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 1fr;
+  background-image: url(../../assets/img/img-fondo-mapa.png);
+}
+
+.consultarMapaCard {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.containerMapa {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 5px;
+}
+.containerMapa div {
+  height: 280px;
+  width: 577px;
+}
+
+.cardConsultar {
+  display: grid;
+  grid-template-rows: 70px 1fr 1fr 1fr 1fr;
+  height: 600px;
+  width: 577px;
+  border-radius: 15px;
+  font-family: "Signika Negative", sans-serif;
+  background-color: lightgray;
+}
+.cardConsultar h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2117647059);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+.cardConsultar form label {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 537px;
+}
+.cardConsultar input {
+  border-radius: 5px;
+  border-style: none;
+  height: 30px;
+}
+.cardConsultar .comentario {
+  height: 90px;
+}
+
+.infoCasa {
+  background-color: lightgray;
+  border-radius: 15px;
+  height: auto;
+  width: auto;
+  margin: 30px;
+  grid-column: 2;
+  grid-row: 1/span 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 5px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Signika Negative", sans-serif;
+}
+.infoCasa h2 {
+  display: flex;
+  justify-content: center;
+}
+.infoCasa h3 {
+  display: flex;
+  justify-content: center;
+}
+.infoCasa .imagenesMapa {
+  display: flex;
+  justify-content: center;
+}
+.infoCasa .infoMapa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.infoCasa .infoMapa figcaption {
+  display: flex;
+  justify-content: center;
+}
+.infoCasa .descripcionMapa {
+  gap: 5px;
+  display: flex;
+  justify-content: end;
+}
+.infoCasa .precio {
+  display: flex;
+  justify-content: end;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .containerIndex {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .mainIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #a8c474;
+    background-image: none;
+  }
+  .card {
+    display: flex;
+    justify-content: start;
+  }
+}
+@media (max-width: 320px) {
+  .containerIndex {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .mainIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #838383;
+    background-image: none;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .containerIndexContacto {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 100% auto;
+  }
+  .mainContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: #670d7e;
+    background-image: none;
+    display: flex;
+  }
+  .cardContacto {
+    width: 300px;
+  }
+  .nombreContacto input, .mainContacto .cardContacto .telefonoContacto input {
+    width: 250px;
+  }
+  .telefonoContacto input {
+    width: 250px;
+  }
+  .correoContacto input {
+    width: 250px;
+  }
+  .mensajeContacto input {
+    width: 250px;
+  }
+  .botonContacto {
+    width: 250px;
+  }
+  .footer {
+    background-color: #222222;
+  }
+  .footer p {
+    color: #000000;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .footer img {
+    height: 30px;
+    width: 40px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
