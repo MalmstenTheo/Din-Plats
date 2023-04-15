@@ -1,8 +1,8 @@
 .mainMapa{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px 1fr;
-    background-image: url(../../assets/img/img-fondo-mapa.png);
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img-fondo-mapa.png);
 }
 
 .consultarMapaCard{
@@ -11,7 +11,7 @@
     display: flex;
     align-items: start;
     justify-content: center;
-    margin-top: 10px;
+    
 }
 
 .containerMapa{
@@ -31,6 +31,7 @@
     grid-template-rows: 70px 1fr 1fr 1fr 1fr;
     height: 600px;
     width: 577px;
+    margin-bottom: 30px;
     border-radius: 15px;
     font-family: 'Signika Negative', sans-serif;
     background-color: lightgray;
@@ -47,6 +48,7 @@
         flex-direction: column;
         margin-left: 20px;
         width: 537px;
+        margin-bottom: 20px;
         }
     }
     input{
@@ -55,7 +57,7 @@
         height: 30px;
     }
     .comentario{
-        height: 90px;
+        height: 200px;
     }
 }
 
@@ -71,15 +73,31 @@
     grid-row: 1 / span 2;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 5px;
+    grid-template-rows: 1fr 1fr 100px 20px 1fr 1fr 5px;
     
     justify-content: center;
     align-items: center;
     
     font-family: 'Signika Negative', sans-serif;
+    
     h2{
         display: flex;
         justify-content: center;
+        color: #105221;
+    }
+    .caracteristicasMapa{
+        height: 50px;
+    }
+    .direccionMapa{
+        display: flex;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+    }
+    .descripcionMapaDos{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        color: #105221;
     }
     h3{
         display: flex;
@@ -94,6 +112,8 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        height: 110px;
+        border-bottom: 1px solid #00000036;
         figcaption{
             display: flex;
             justify-content: center;
@@ -103,10 +123,12 @@
         gap: 5px;
         display: flex;
         justify-content: end;
+        margin: 15px;
     }
     .precio{
         display: flex;
         justify-content: end;
         font-size: 25px;
+        margin-right: 25px;
     }
 }
