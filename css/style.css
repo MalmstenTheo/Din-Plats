@@ -377,7 +377,7 @@ header nav .usuario {
 .mainMapa {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 640px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img-fondo-mapa.png);
 }
 
@@ -393,8 +393,8 @@ header nav .usuario {
   display: flex;
   width: auto;
   justify-content: center;
-  align-items: end;
-  margin-bottom: 5px;
+  align-items: start;
+  margin-top: 30px;
 }
 .containerMapa div {
   height: 280px;
@@ -437,7 +437,7 @@ header nav .usuario {
 .infoCasa {
   background-color: lightgray;
   border-radius: 15px;
-  height: auto;
+  height: 885px;
   width: auto;
   margin: 30px;
   grid-column: 2;
@@ -587,6 +587,29 @@ header nav .usuario {
   .footer img {
     height: 30px;
     width: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .mainMapa {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerIndexMapa {
+    height: 100%;
+  }
+  .infoCasa {
+    height: 900px;
+    order: 3;
+  }
+  .infoCasa .imagenesMapa img {
+    width: 590px;
+  }
+  .cardConsultar {
+    order: 1;
+    margin-top: 30px;
+  }
+  .containerMapa {
+    order: 2;
   }
 }
 

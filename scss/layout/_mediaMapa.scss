@@ -1,0 +1,27 @@
+@media (max-width:768px){
+    .mainMapa{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerIndexMapa{
+        height: 100%;
+    }
+    .infoCasa{
+        height: 900px;
+        order: 3;
+        .imagenesMapa{
+            img{
+                width: 590px;
+            }
+        }
+    }
+    .consultarMapaCard{
+    }
+    .cardConsultar{
+        order: 1;
+        margin-top: 30px;
+    }
+    .containerMapa{
+        order: 2;
+    }
+}
