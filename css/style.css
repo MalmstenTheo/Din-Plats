@@ -169,7 +169,7 @@ header nav .usuario {
   margin-right: 105px;
 }
 .mainIndex section .cardUno button {
-  background-color: #40541A; /*VARIABLE*/
+  background-color: #567223; /*VARIABLE*/
   padding: 3.5px;
   border-radius: 5px;
   font-family: "Signika Negative", sans-serif;
@@ -501,6 +501,53 @@ header nav .usuario {
   margin-right: 25px;
 }
 
+.mainPublicar {
+  height: 100vh;
+  font-family: "Signika Negative", sans-serif;
+}
+.mainPublicar .cardPublicar {
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.mainPublicar .cardPublicar .hDosPublicar {
+  grid-column: 1/span 3;
+}
+.mainPublicar .cardPublicar .hDosPublicar div h2 {
+  display: flex;
+  justify-content: center;
+}
+.mainPublicar .cardPublicar .publiTipoUno, .mainPublicar .cardPublicar .publiTipoTres, .mainPublicar .cardPublicar .publiTipoDos {
+  border: 3px solid rgba(0, 0, 0, 0.336);
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mainPublicar .cardPublicar .publiTipoUno div, .mainPublicar .cardPublicar .publiTipoTres div, .mainPublicar .cardPublicar .publiTipoDos div {
+  display: flex;
+  justify-content: center;
+}
+.mainPublicar .cardPublicar .publiTipoUno div img, .mainPublicar .cardPublicar .publiTipoTres div img, .mainPublicar .cardPublicar .publiTipoDos div img {
+  margin-top: 35px;
+}
+.mainPublicar .cardPublicar .publiTipoUno div button, .mainPublicar .cardPublicar .publiTipoTres div button, .mainPublicar .cardPublicar .publiTipoDos div button {
+  margin: 35px;
+  background-color: #567223; /*VARIABLE*/
+  padding: 3.5px;
+  border-radius: 5px;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: bold;
+  width: 80px;
+}
+.mainPublicar .cardPublicar .publiTipoUno div p, .mainPublicar .cardPublicar .publiTipoTres div p, .mainPublicar .cardPublicar .publiTipoDos div p {
+  border: 1px solid rgba(0, 0, 0, 0.336);
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+}
 @media (max-width: 768px) {
   .containerIndex {
     width: 100%;
@@ -594,11 +641,27 @@ header nav .usuario {
     display: flex;
     flex-direction: column;
   }
-  .containerIndexMapa {
-    height: 100%;
-  }
   .infoCasa {
     height: 900px;
+    order: 3;
+  }
+  .infoCasa .imagenesMapa img {
+    width: 590px;
+  }
+  .cardConsultar {
+    order: 1;
+    margin-top: 30px;
+  }
+  .containerMapa {
+    order: 2;
+  }
+}
+@media (max-width: 1024px) {
+  .mainMapa {
+    display: flex;
+    flex-direction: column;
+  }
+  .infoCasa {
     order: 3;
   }
   .infoCasa .imagenesMapa img {
