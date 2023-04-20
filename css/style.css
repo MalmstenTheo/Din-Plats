@@ -128,7 +128,7 @@ header nav .usuario {
   grid-template-rows: 1fr 1fr;
   align-items: center;
   gap: 45px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img-fondo-inicio.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img-fondo-contacto.png);
   background-repeat: round;
 }
 .mainIndex section {
@@ -136,7 +136,7 @@ header nav .usuario {
   justify-content: center;
   align-content: center;
 }
-.mainIndex section .cardUno {
+.mainIndex section .cardUno, .mainIndex section .cardSeis, .mainIndex section .cardCinco, .mainIndex section .cardCuatro, .mainIndex section .cardTres, .mainIndex section .cardDos {
   background-color: rgb(255, 255, 255);
   margin-top: 25px;
   margin-left: 25px;
@@ -145,35 +145,50 @@ header nav .usuario {
   border-radius: 13%;
   box-shadow: 6px 6px 30px black;
 }
-.mainIndex section .cardUno img {
+.mainIndex section .cardUno img, .mainIndex section .cardSeis img, .mainIndex section .cardCinco img, .mainIndex section .cardCuatro img, .mainIndex section .cardTres img, .mainIndex section .cardDos img {
   width: 100%;
   border-radius: 13%;
 }
-.mainIndex section .cardUno h2 {
+.mainIndex section .cardUno h2, .mainIndex section .cardSeis h2, .mainIndex section .cardCinco h2, .mainIndex section .cardCuatro h2, .mainIndex section .cardTres h2, .mainIndex section .cardDos h2 {
   font-size: 18px;
   display: flex;
   justify-content: center;
 }
-.mainIndex section .cardUno ul {
+.mainIndex section .cardUno ul, .mainIndex section .cardSeis ul, .mainIndex section .cardCinco ul, .mainIndex section .cardCuatro ul, .mainIndex section .cardTres ul, .mainIndex section .cardDos ul {
   margin-left: 10px;
   list-style: none;
   margin-top: 20px;
 }
-.mainIndex section .cardUno .precio {
+.mainIndex section .cardUno .precio, .mainIndex section .cardSeis .precio, .mainIndex section .cardCinco .precio, .mainIndex section .cardCuatro .precio, .mainIndex section .cardTres .precio, .mainIndex section .cardDos .precio {
   display: flex;
   flex-wrap: row wrap;
   justify-content: center;
   margin-top: 25px;
 }
-.mainIndex section .cardUno .precio h3 {
+.mainIndex section .cardUno .precio h3, .mainIndex section .cardSeis .precio h3, .mainIndex section .cardCinco .precio h3, .mainIndex section .cardCuatro .precio h3, .mainIndex section .cardTres .precio h3, .mainIndex section .cardDos .precio h3 {
   margin-right: 105px;
 }
-.mainIndex section .cardUno button {
+.mainIndex section .cardUno button, .mainIndex section .cardSeis button, .mainIndex section .cardCinco button, .mainIndex section .cardCuatro button, .mainIndex section .cardTres button, .mainIndex section .cardDos button {
   background-color: #567223; /*VARIABLE*/
   padding: 3.5px;
   border-radius: 5px;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
+}
+.mainIndex section .cardDos img {
+  height: 195px;
+}
+.mainIndex section .cardTres img {
+  height: 195px;
+}
+.mainIndex section .cardCuatro img {
+  height: 195px;
+}
+.mainIndex section .cardCinco img {
+  height: 195px;
+}
+.mainIndex section .cardSeis img {
+  height: 195px;
 }
 
 /*fin main*/
@@ -257,6 +272,7 @@ header nav .usuario {
 }
 .mainLogin .gridCardLogin .registrarmeLogin p {
   color: #40541A;
+  text-decoration: underline white;
 }
 .mainLogin .gridCardLogin .ayudaLogin {
   display: flex;
@@ -267,6 +283,7 @@ header nav .usuario {
   display: flex;
   flex-direction: column;
   color: #40541A;
+  text-decoration: underline white;
 }
 .mainLogin .gridCardLogin .terminosLogin {
   display: flex;
@@ -504,26 +521,45 @@ header nav .usuario {
 .mainPublicar {
   height: 100vh;
   font-family: "Signika Negative", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img-fondo-publicar.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mainPublicar .cardPublicar {
-  border: 1px solid red;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-rows: 60px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  height: 600px;
+  width: 1500px;
 }
 .mainPublicar .cardPublicar .hDosPublicar {
   grid-column: 1/span 3;
+  color: #567223;
 }
-.mainPublicar .cardPublicar .hDosPublicar div h2 {
+.mainPublicar .cardPublicar .hDosPublicar div {
+  height: 40px;
   display: flex;
   justify-content: center;
+  align-items: end;
+}
+.mainPublicar .cardPublicar .containerCardPubli {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mainPublicar .cardPublicar .publiTipoUno, .mainPublicar .cardPublicar .publiTipoTres, .mainPublicar .cardPublicar .publiTipoDos {
-  border: 3px solid rgba(0, 0, 0, 0.336);
-  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.336);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
   width: 400px;
+  height: 460px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
 }
 .mainPublicar .cardPublicar .publiTipoUno div, .mainPublicar .cardPublicar .publiTipoTres div, .mainPublicar .cardPublicar .publiTipoDos div {
@@ -531,7 +567,10 @@ header nav .usuario {
   justify-content: center;
 }
 .mainPublicar .cardPublicar .publiTipoUno div img, .mainPublicar .cardPublicar .publiTipoTres div img, .mainPublicar .cardPublicar .publiTipoDos div img {
-  margin-top: 35px;
+  display: flex;
+  align-items: start;
+  height: 80px;
+  width: 75px;
 }
 .mainPublicar .cardPublicar .publiTipoUno div button, .mainPublicar .cardPublicar .publiTipoTres div button, .mainPublicar .cardPublicar .publiTipoDos div button {
   margin: 35px;
@@ -547,6 +586,12 @@ header nav .usuario {
   border-radius: 10px;
   padding: 5px;
   font-weight: bold;
+}
+.mainPublicar .cardPublicar .publiTipoUno .divImgPubli, .mainPublicar .cardPublicar .publiTipoTres .divImgPubli, .mainPublicar .cardPublicar .publiTipoDos .divImgPubli {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
 }
 @media (max-width: 768px) {
   .containerIndex {

@@ -1,32 +1,52 @@
 .mainPublicar{
     height: 100vh;
     font-family: 'Signika Negative', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img-fondo-publicar.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .cardPublicar{
-        border: 1px solid red;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
         display: grid;
         grid-template-rows: 60px 1fr ;
         grid-template-columns: 1fr 1fr 1fr;
+        height: 600px;
+        width: 1500px;
         .hDosPublicar{
             grid-column: 1 / span 3;
+            color: #567223;
             div{
-                h2{
-                    display: flex;
-                    justify-content: center;
-                }
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: end;
             }
         }
+        .containerCardPubli{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .publiTipoUno{
-            border: 3px solid rgba(0, 0, 0, 0.336);;
-            border-radius: 10px;
+            border: 2px solid rgba(0, 0, 0, 0.336);
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
             width: 400px;
+            height: 460px;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             gap: 10px;
             div{
             display: flex;
             justify-content: center;
             img{
-                margin-top: 35px;
+                display: flex;
+                align-items: start;
+                height: 80px;
+                width: 75px;
             }
             button{
                 margin: 35px;
@@ -43,6 +63,12 @@
                 padding: 5px;
                 font-weight: bold;
             }
+            }
+            .divImgPubli{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 130px
             }
         }
         .publiTipoDos{

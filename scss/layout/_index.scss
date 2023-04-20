@@ -7,7 +7,7 @@
     grid-template-rows: 1fr 1fr;
     align-items: center;
     gap: 45px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img-fondo-inicio.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img-fondo-contacto.png);
     background-repeat: round;
     section{
         display: flex;
@@ -50,6 +50,46 @@
                 border-radius: 5px;
                 font-family: 'Signika Negative', sans-serif;
                 font-weight: bold;
+            }
+        }
+    }
+    section{
+        .cardDos{
+            @extend .cardUno;
+            img{
+                height: 195px;
+            }
+        }
+    }
+    section{
+        .cardTres{
+            @extend .cardUno;
+            img{
+                height: 195px;
+            }
+        }
+    }
+    section{
+        .cardCuatro{
+            @extend .cardUno;
+            img{
+                height: 195px;
+            }
+        }
+    }
+    section{
+        .cardCinco{
+            @extend .cardUno;
+            img{
+                height: 195px;
+            }
+        }
+    }
+    section{
+        .cardSeis{
+            @extend .cardUno;
+            img{
+                height: 195px;
             }
         }
     }
