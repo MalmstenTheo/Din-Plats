@@ -118,6 +118,9 @@ header nav .usuario {
   justify-content: end;
   align-items: center;
 }
+.footer section p {
+  color: lightgray;
+}
 
 /*fin footer*/
 /*inicio main*/
@@ -700,6 +703,9 @@ header nav .usuario {
   .containerMapa {
     order: 2;
   }
+  .footer p {
+    color: lightgray;
+  }
 }
 @media (max-width: 1024px) {
   .mainMapa {
@@ -718,6 +724,103 @@ header nav .usuario {
   }
   .containerMapa {
     order: 2;
+  }
+}
+@media (max-width: 425px) {
+  html, body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .header nav .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .header nav .logo img {
+    height: 50px;
+  }
+  .header nav .logo h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .header nav .lista {
+    gap: 45px;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  .header nav .usuario img {
+    height: 40px;
+  }
+  .cardConsultar {
+    order: 1;
+    margin-top: 30px;
+    height: 530px;
+    width: 380px;
+  }
+  .cardConsultar h2 {
+    font-size: 19px;
+    width: 400px;
+  }
+  .cardConsultar span {
+    font-size: 13px;
+  }
+  .cardConsultar input {
+    width: 340px;
+    font-size: 13px;
+  }
+  .containerMapa {
+    order: 2;
+  }
+  .containerMapa div {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerMapa div img {
+    width: 380px;
+  }
+  .infoCasa {
+    height: 600px;
+    order: 3;
+    grid-template-rows: 1fr 1fr 70px 20px 1fr 50px 5px;
+  }
+  .infoCasa h2 {
+    font-size: 19px;
+  }
+  .infoCasa h3 {
+    font-size: 16px;
+  }
+  .infoCasa .imagenesMapa img {
+    width: 330px;
+  }
+  .infoCasa .caracteristicasMapa {
+    font-size: 19px;
+    height: 25px;
+  }
+  .infoCasa .infoMapa {
+    height: 50px;
+    width: 360px;
+    border-bottom: none;
+  }
+  .infoCasa .infoMapa img {
+    height: 30px;
+  }
+  .infoCasa .infoMapa figcaption {
+    font-size: x-small;
+  }
+  .infoCasa .descripcionMapaDos {
+    font-size: 19px;
+  }
+  .infoCasa .descripcionMapa {
+    font-size: 13px;
+  }
+  .infoCasa .precio {
+    font-size: 19px;
+  }
+  .footer p {
+    font-size: 15px;
+    color: lightgray;
   }
 }
 
