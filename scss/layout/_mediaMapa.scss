@@ -19,11 +19,6 @@
     .containerMapa{
         order: 2;
     }
-    .footer{
-        p{
-            color: lightgray;
-        }
-    }
 }
 
 @media (max-width:1024px){
@@ -52,32 +47,6 @@
     html, body {
         width: 100%!important;
         overflow-x: hidden!important;
-    }
-    .header{
-        nav{
-            .logo{
-                display: flex;
-                justify-content: center;
-                img{
-                    height: 50px;
-                }
-                h1{
-                    display: flex;
-                    justify-content: center;
-                    font-size: 15px;
-                }
-            }
-            .lista{
-                gap: 45px;
-                font-size: 15px;
-                font-weight: bolder;
-            }
-            .usuario{
-                img{
-                    height: 40px;
-                }
-            }
-        }
     }
     .cardConsultar{
         order: 1;
@@ -146,12 +115,6 @@
         }
         .precio{
             font-size: 19px;
-        }
-    }
-    .footer{
-        p{
-            font-size: 15px;
-            color: lightgray;
         }
     }
 }

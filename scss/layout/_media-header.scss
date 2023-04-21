@@ -1,0 +1,58 @@
+@media (max-width:425px){
+    .header{
+        nav{
+            .logo{
+                display: flex;
+                justify-content: center;
+                img{
+                    height: 50px;
+                }
+                h1{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 15px;
+                }
+            }
+            .lista{
+                gap: 45px;
+                font-size: 15px;
+                font-weight: bolder;
+            }
+            .usuario{
+                img{
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px){
+    .header{
+        nav{
+            .logo{
+                display: flex;
+                justify-content: center;
+                img{
+                    height: 30px;
+                }
+                h1{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 10px;
+                }
+            }
+            .lista{
+                gap: 25px;
+                font-size: 13px;
+                font-weight: bolder;
+            }
+            .usuario{
+                img{
+                    height: 28px;
+                    width: 28px;
+                }
+            }
+        }
+    }
+}

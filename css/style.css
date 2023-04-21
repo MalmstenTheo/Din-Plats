@@ -124,6 +124,11 @@ header nav .usuario {
 
 /*fin footer*/
 /*inicio main*/
+html, body {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 .mainIndex {
   font-family: "Signika Negative", sans-serif;
   display: grid;
@@ -138,6 +143,7 @@ header nav .usuario {
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-bottom: 20px;
 }
 .mainIndex section .cardUno, .mainIndex section .cardSeis, .mainIndex section .cardCinco, .mainIndex section .cardCuatro, .mainIndex section .cardTres, .mainIndex section .cardDos {
   background-color: rgb(255, 255, 255);
@@ -597,44 +603,34 @@ header nav .usuario {
   height: 130px;
 }
 @media (max-width: 768px) {
-  .containerIndex {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-  }
   .mainIndex {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color: #a8c474;
-    background-image: none;
   }
-  .card {
+  .mainIndex section {
+    margin-bottom: 20px;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 1440px) {
+  .mainIndex {
     display: flex;
-    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 @media (max-width: 320px) {
-  .containerIndex {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-  }
   .mainIndex {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: #838383;
-    background-image: none;
+    gap: 20px;
   }
   .card {
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
   }
 }
 @media (max-width: 320px) {
@@ -671,18 +667,6 @@ header nav .usuario {
   .botonContacto {
     width: 250px;
   }
-  .footer {
-    background-color: #222222;
-  }
-  .footer p {
-    color: #000000;
-    font-size: 10px;
-    margin-top: 10px;
-  }
-  .footer img {
-    height: 30px;
-    width: 40px;
-  }
 }
 @media (max-width: 768px) {
   .mainMapa {
@@ -702,9 +686,6 @@ header nav .usuario {
   }
   .containerMapa {
     order: 2;
-  }
-  .footer p {
-    color: lightgray;
   }
 }
 @media (max-width: 1024px) {
@@ -730,26 +711,6 @@ header nav .usuario {
   html, body {
     width: 100% !important;
     overflow-x: hidden !important;
-  }
-  .header nav .logo {
-    display: flex;
-    justify-content: center;
-  }
-  .header nav .logo img {
-    height: 50px;
-  }
-  .header nav .logo h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-  }
-  .header nav .lista {
-    gap: 45px;
-    font-size: 15px;
-    font-weight: bolder;
-  }
-  .header nav .usuario img {
-    height: 40px;
   }
   .cardConsultar {
     order: 1;
@@ -818,9 +779,68 @@ header nav .usuario {
   .infoCasa .precio {
     font-size: 19px;
   }
+}
+@media (max-width: 425px) {
+  .header nav .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .header nav .logo img {
+    height: 50px;
+  }
+  .header nav .logo h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .header nav .lista {
+    gap: 45px;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  .header nav .usuario img {
+    height: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .header nav .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .header nav .logo img {
+    height: 30px;
+  }
+  .header nav .logo h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+  }
+  .header nav .lista {
+    gap: 25px;
+    font-size: 13px;
+    font-weight: bolder;
+  }
+  .header nav .usuario img {
+    height: 28px;
+    width: 28px;
+  }
+}
+@media (max-width: 425px) {
   .footer p {
     font-size: 15px;
     color: lightgray;
+  }
+}
+@media (max-width: 320px) {
+  .footer .telefono p {
+    font-size: 12px;
+  }
+  .footer .mail img {
+    width: 40px;
+    height: 30px;
+  }
+  .footer .mail p {
+    font-size: 12px;
   }
 }
 

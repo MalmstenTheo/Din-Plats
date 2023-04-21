@@ -1,5 +1,9 @@
 /*inicio main*/
 
+html, body {
+    width: 100%!important;
+    overflow-x: hidden!important;
+}
 .mainIndex{
     font-family: 'Signika Negative', sans-serif;
     display: grid;
@@ -13,6 +17,7 @@
         display: flex;
         justify-content: center;
         align-content: center;
+        margin-bottom: 20px;
         .cardUno{
             background-color: rgb(255, 255, 255);
             margin-top: 25px;
