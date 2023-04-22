@@ -1,0 +1,41 @@
+@media (max-width: 425px){
+    .mainLogin{
+        .cardLogin{
+            width: 300px;
+            height: 440px;
+            .h2Login{
+                width: 300px;
+            }
+            .correoLogin{
+                width: 260px;
+                input{
+                    width: 270px;
+                }
+            }
+            .contraseñaLogin{
+                width: 260px;
+                input{
+                    width: 270px;
+                }
+            }
+            .botonLogin{
+                width: 300px;
+                margin-top: 15px;
+                button{
+                    width: 270px;
+                }
+            }
+            div{
+                a{
+                    font-weight: bolder;
+                }
+            }
+            .terminosLogin{
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+

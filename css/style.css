@@ -898,5 +898,136 @@ html, body {
     height: 20px;
   }
 }
+@media (max-width: 1024px) {
+  html, body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .mainPublicar {
+    height: 100%;
+  }
+  .mainPublicar .cardPublicar {
+    width: 700px;
+    height: 980px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainPublicar .cardPublicar .hDosPublicar {
+    width: 700px;
+  }
+  .mainPublicar .cardPublicar .hDosPublicar h2 {
+    font-size: 19px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli {
+    gap: 5px;
+    margin: 20px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli .publiTipoUno, .mainPublicar .cardPublicar .containerCardPubli .publiTipoDos, .mainPublicar .cardPublicar .containerCardPubli .publiTipoTres {
+    height: 267px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli .publiTipoUno img, .mainPublicar .cardPublicar .containerCardPubli .publiTipoDos img, .mainPublicar .cardPublicar .containerCardPubli .publiTipoTres img {
+    height: 50px;
+    width: 50px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli .publiTipoUno ul, .mainPublicar .cardPublicar .containerCardPubli .publiTipoDos ul, .mainPublicar .cardPublicar .containerCardPubli .publiTipoTres ul {
+    font-size: 15px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli .publiTipoUno div p, .mainPublicar .cardPublicar .containerCardPubli .publiTipoDos div p, .mainPublicar .cardPublicar .containerCardPubli .publiTipoTres div p {
+    font-size: 15px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli .publiTipoUno div button, .mainPublicar .cardPublicar .containerCardPubli .publiTipoDos div button, .mainPublicar .cardPublicar .containerCardPubli .publiTipoTres div button {
+    margin: 10px;
+  }
+}
+@media (max-width: 425px) {
+  html, body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .mainPublicar {
+    height: 100%;
+  }
+  .mainPublicar .cardPublicar {
+    width: 700px;
+    height: 980px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainPublicar .cardPublicar .hDosPublicar {
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainPublicar .cardPublicar .hDosPublicar h2 {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli {
+    gap: 5px;
+    margin: 20px 20px 5px 5px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli .publiTipoUno, .mainPublicar .cardPublicar .containerCardPubli .publiTipoDos, .mainPublicar .cardPublicar .containerCardPubli .publiTipoTres {
+    height: 267px;
+    width: 260px;
+    margin-left: 15px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli .publiTipoUno img, .mainPublicar .cardPublicar .containerCardPubli .publiTipoDos img, .mainPublicar .cardPublicar .containerCardPubli .publiTipoTres img {
+    height: 50px;
+    width: 50px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli .publiTipoUno ul, .mainPublicar .cardPublicar .containerCardPubli .publiTipoDos ul, .mainPublicar .cardPublicar .containerCardPubli .publiTipoTres ul {
+    font-size: 13px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli .publiTipoUno ul li, .mainPublicar .cardPublicar .containerCardPubli .publiTipoDos ul li, .mainPublicar .cardPublicar .containerCardPubli .publiTipoTres ul li {
+    margin-left: 15px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli .publiTipoUno div p, .mainPublicar .cardPublicar .containerCardPubli .publiTipoDos div p, .mainPublicar .cardPublicar .containerCardPubli .publiTipoTres div p {
+    font-size: 13px;
+  }
+  .mainPublicar .cardPublicar .containerCardPubli .publiTipoUno div button, .mainPublicar .cardPublicar .containerCardPubli .publiTipoDos div button, .mainPublicar .cardPublicar .containerCardPubli .publiTipoTres div button {
+    padding: 2px;
+    margin: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .mainLogin .cardLogin {
+    width: 300px;
+    height: 440px;
+  }
+  .mainLogin .cardLogin .h2Login {
+    width: 300px;
+  }
+  .mainLogin .cardLogin .correoLogin {
+    width: 260px;
+  }
+  .mainLogin .cardLogin .correoLogin input {
+    width: 270px;
+  }
+  .mainLogin .cardLogin .contraseñaLogin {
+    width: 260px;
+  }
+  .mainLogin .cardLogin .contraseñaLogin input {
+    width: 270px;
+  }
+  .mainLogin .cardLogin .botonLogin {
+    width: 300px;
+    margin-top: 15px;
+  }
+  .mainLogin .cardLogin .botonLogin button {
+    width: 270px;
+  }
+  .mainLogin .cardLogin div a {
+    font-weight: bolder;
+  }
+  .mainLogin .cardLogin .terminosLogin {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

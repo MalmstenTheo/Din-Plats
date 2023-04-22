@@ -1,0 +1,100 @@
+@media (max-width:1024px){
+    html, body {
+        width: 100%!important;
+        overflow-x: hidden!important;
+    }
+    .mainPublicar{
+        height: 100%;
+        .cardPublicar{
+            width: 700px;
+            height: 980px;
+            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            .hDosPublicar{
+                width: 700px;
+                h2{
+                    font-size: 19px;
+                }
+            }
+            .containerCardPubli{
+                gap: 5px;
+                margin: 20px;
+                .publiTipoUno{
+                    height:267px;
+                    img{
+                        height: 50px;
+                        width: 50px;
+                    }
+                    ul{
+                        font-size: 15px;
+                    }
+                    div{
+                        p{
+                            font-size: 15px;
+                        }
+                        button{
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px){
+    html, body {
+        width: 100%!important;
+        overflow-x: hidden!important;
+    }
+    .mainPublicar{
+        height: 100%;
+        .cardPublicar{
+            width: 700px;
+            height: 980px;
+            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            .hDosPublicar{
+                width: auto;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h2{
+                    margin-left: 10px;
+                    font-size: 16px;
+                }
+            }
+            .containerCardPubli{
+                gap: 5px;
+                margin: 20px 20px 5px 5px;
+                .publiTipoUno{
+                    height:267px;
+                    width: 260px;
+                    margin-left: 15px;
+                    img{
+                        height: 50px;
+                        width: 50px;
+                    }
+                    ul{
+                        font-size: 13px;
+                        li{
+                                margin-left: 15px;
+                        }
+                    }
+                    div{
+                        p{
+                            font-size: 13px;
+                        }
+                        button{
+                            padding: 2px;
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
