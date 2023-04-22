@@ -118,3 +118,112 @@
         }
     }
 }
+
+@media (max-width:375px){
+    .infoCasa{
+        margin: 10px;
+        margin-top: 50px;
+        width: 350px;
+        height: 590px;
+        grid-template-rows: 1fr 1fr 70px 1px 1fr 50px 5px;
+        section{
+            div{
+                h2{
+                    font-size: 17px;
+                    width: 300px;
+                    margin: auto;
+                }
+                h3{
+                    font-size: 12px;
+                }
+            }
+        }
+        .imagenesMapa{
+            width: 350px;
+            margin: auto;
+            margin-left: 10px;
+            img{
+                width: 260px;
+            }
+        }
+        .infoMapa{
+            width: 350px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    }
+    .cardConsultar{
+        width: 300px;
+        div{
+            h2{
+                width: 300px;
+            }
+        }
+        div{
+            input{
+                width: 260px;
+            }
+        }
+    }
+    .containerMapa{
+        div{
+            img{
+                width: 300px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:320px){
+    .cardConsultar{
+        width: 300px;
+        div{
+            h2{
+                width: 300px;
+            }
+        }
+        div{
+            input{
+                width: 260px;
+            }
+        }
+    }
+    .containerMapa{
+        div{
+            img{
+                width: 300px;
+            }
+        }
+    }
+    .infoCasa{
+        margin: 10px;
+        margin-top: 50px;
+        width: 300px;
+        height: 590px;
+        grid-template-rows: 1fr 1fr 70px 1px 1fr 50px 5px;
+        section{
+            div{
+                h2{
+                    font-size: 17px;
+                    width: 300px;
+                    margin: auto;
+                }
+                h3{
+                    font-size: 12px;
+                }
+            }
+        }
+        .imagenesMapa{
+            width: 300px;
+            margin: auto;
+            margin-left: 10px;
+            img{
+                width: 260px;
+            }
+        }
+        .infoMapa{
+            width: 300px;
+        }
+    }
+}

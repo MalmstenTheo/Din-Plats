@@ -5,46 +5,6 @@
   box-sizing: border-box;
 }
 
-.containerIndex {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 100% auto;
-}
-
-.containerIndexContacto {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 100% auto;
-}
-
-.containerIndexPublicar {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 100% auto;
-}
-
-.containerIndexMapa {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 100% auto;
-}
-
-.containerIndexLogin {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 100% auto;
-}
-
 /*inicio de header*/
 header {
   height: 100%;
@@ -204,7 +164,7 @@ html, body {
 /*Inicio de pagina Iniciar-sesion*/
 .mainLogin {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-family: "Signika Negative", sans-serif;
   display: flex;
   justify-content: center;
@@ -307,7 +267,7 @@ html, body {
 /*incio pagina Contacto*/
 .mainContacto {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -633,39 +593,64 @@ html, body {
     justify-content: center;
   }
 }
-@media (max-width: 320px) {
-  .containerIndexContacto {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 100% auto;
+@media (max-width: 425px) {
+  .mainContacto .cardContacto {
+    width: 400px;
   }
-  .mainContacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background-color: #670d7e;
-    background-image: none;
-    display: flex;
+  .mainContacto .cardContacto .titleContacto {
+    width: 400px;
   }
-  .cardContacto {
+  .mainContacto .cardContacto .nombreContacto, .mainContacto .cardContacto .telefonoContacto {
+    width: 400px;
+  }
+  .mainContacto .cardContacto .nombreContacto input, .mainContacto .cardContacto .telefonoContacto input {
+    width: 360px;
+  }
+  .mainContacto .cardContacto .correoContacto {
+    width: 400px;
+  }
+  .mainContacto .cardContacto .correoContacto input {
+    width: 360px;
+  }
+  .mainContacto .cardContacto .mensajeContacto {
+    width: 400px;
+  }
+  .mainContacto .cardContacto .mensajeContacto input {
+    width: 360px;
+  }
+  .mainContacto .cardContacto .botonContacto {
+    width: 360px;
+  }
+}
+@media (max-width: 375px) {
+  .mainContacto .cardContacto {
+    font-size: 13px;
+    width: 300px;
+    height: 520px;
+  }
+  .mainContacto .cardContacto .titleContacto {
     width: 300px;
   }
-  .nombreContacto input, .mainContacto .cardContacto .telefonoContacto input {
-    width: 250px;
+  .mainContacto .cardContacto .nombreContacto, .mainContacto .cardContacto .telefonoContacto {
+    width: 300px;
   }
-  .telefonoContacto input {
-    width: 250px;
+  .mainContacto .cardContacto .nombreContacto input, .mainContacto .cardContacto .telefonoContacto input {
+    width: 260px;
   }
-  .correoContacto input {
-    width: 250px;
+  .mainContacto .cardContacto .correoContacto {
+    width: 300px;
   }
-  .mensajeContacto input {
-    width: 250px;
+  .mainContacto .cardContacto .correoContacto input {
+    width: 260px;
   }
-  .botonContacto {
-    width: 250px;
+  .mainContacto .cardContacto .mensajeContacto {
+    width: 300px;
+  }
+  .mainContacto .cardContacto .mensajeContacto input {
+    width: 260px;
+  }
+  .mainContacto .cardContacto .botonContacto {
+    width: 260px;
   }
 }
 @media (max-width: 768px) {
@@ -780,26 +765,86 @@ html, body {
     font-size: 19px;
   }
 }
-@media (max-width: 425px) {
-  .header nav .logo {
-    display: flex;
-    justify-content: center;
+@media (max-width: 375px) {
+  .infoCasa {
+    margin: 10px;
+    margin-top: 50px;
+    width: 350px;
+    height: 590px;
+    grid-template-rows: 1fr 1fr 70px 1px 1fr 50px 5px;
   }
-  .header nav .logo img {
-    height: 50px;
+  .infoCasa section div h2 {
+    font-size: 17px;
+    width: 300px;
+    margin: auto;
   }
-  .header nav .logo h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
+  .infoCasa section div h3 {
+    font-size: 12px;
   }
-  .header nav .lista {
-    gap: 45px;
-    font-size: 15px;
-    font-weight: bolder;
+  .infoCasa .imagenesMapa {
+    width: 350px;
+    margin: auto;
+    margin-left: 10px;
   }
-  .header nav .usuario img {
-    height: 40px;
+  .infoCasa .imagenesMapa img {
+    width: 260px;
+  }
+  .infoCasa .infoMapa {
+    width: 350px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .cardConsultar {
+    width: 300px;
+  }
+  .cardConsultar div h2 {
+    width: 300px;
+  }
+  .cardConsultar div input {
+    width: 260px;
+  }
+  .containerMapa div img {
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .cardConsultar {
+    width: 300px;
+  }
+  .cardConsultar div h2 {
+    width: 300px;
+  }
+  .cardConsultar div input {
+    width: 260px;
+  }
+  .containerMapa div img {
+    width: 300px;
+  }
+  .infoCasa {
+    margin: 10px;
+    margin-top: 50px;
+    width: 300px;
+    height: 590px;
+    grid-template-rows: 1fr 1fr 70px 1px 1fr 50px 5px;
+  }
+  .infoCasa section div h2 {
+    font-size: 17px;
+    width: 300px;
+    margin: auto;
+  }
+  .infoCasa section div h3 {
+    font-size: 12px;
+  }
+  .infoCasa .imagenesMapa {
+    width: 300px;
+    margin: auto;
+    margin-left: 10px;
+  }
+  .infoCasa .imagenesMapa img {
+    width: 260px;
+  }
+  .infoCasa .infoMapa {
+    width: 300px;
   }
 }
 @media (max-width: 425px) {
@@ -831,16 +876,26 @@ html, body {
     color: lightgray;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .footer .telefono p {
     font-size: 12px;
   }
+  .footer .telefono img {
+    width: 40px;
+    height: 25px;
+  }
   .footer .mail img {
     width: 40px;
-    height: 30px;
+    height: 25px;
   }
   .footer .mail p {
     font-size: 12px;
+  }
+  .footer .logoFooter {
+    width: 30px;
+  }
+  .footer .logoFooter img {
+    height: 20px;
   }
 }
 
