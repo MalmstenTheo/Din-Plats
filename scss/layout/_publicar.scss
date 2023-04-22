@@ -56,6 +56,10 @@
                 font-family: 'Signika Negative', sans-serif;
                 font-weight: bold;
                 width: 80px;
+                transition: height 0.5s, width 0.2s;
+            }
+            button:hover{
+                height: 35px; width: 85px;
             }
             p{
                 border: 1px solid rgba(0, 0, 0, 0.336);

@@ -549,6 +549,11 @@ html, body {
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
   width: 80px;
+  transition: height 0.5s, width 0.2s;
+}
+.mainPublicar .cardPublicar .publiTipoUno div button:hover, .mainPublicar .cardPublicar .publiTipoTres div button:hover, .mainPublicar .cardPublicar .publiTipoDos div button:hover {
+  height: 35px;
+  width: 85px;
 }
 .mainPublicar .cardPublicar .publiTipoUno div p, .mainPublicar .cardPublicar .publiTipoTres div p, .mainPublicar .cardPublicar .publiTipoDos div p {
   border: 1px solid rgba(0, 0, 0, 0.336);
